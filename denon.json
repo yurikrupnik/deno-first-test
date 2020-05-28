@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": {
+      "cmd": "deno run main.ts",
+      "desc": "Run the main server.",
+      "tsconfig": "tsconfig.json",
+      "inspect": "127.0.0.1:9229"
+    }
+  }
+}

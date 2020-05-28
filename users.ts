@@ -5,13 +5,12 @@
 //     });
 // });
 
-
-const helloWorld = (ctx) => {
-    // if (ctx.url.includes('/error')) {
-    // }
-    ctx.response.body = "Hello sd!";
-}
+const helloWorld = (ctx: any) => {
+  // if (ctx.url.includes('/error')) {
+  // }
+  ctx.response.body = "Hello sd!";
+};
 
 export {
-    helloWorld
-}
+  helloWorld,
+};

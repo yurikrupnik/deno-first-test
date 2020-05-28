@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  app:
+#    image: yurikrupnik/deno-test
+    build:
+      context: .
+    #      dockerfile: .
+    #      dockerfile: docker-compose.yml
+    #      args:/
+    #        - port=7000
+    #        - NODE_ENV_DOCKER=true
+    #        - DATABASE_URL=mongodb://db/service1-db
+    #        - HOST=0.0.0.0
+    container_name: deno-test
+    #    environment:
+    ##      - PORT=7000
+    #      - NODE_ENV_DOCKER=true
+    #      - DATABASE_URL=mongodb://db/service1-db
+    ports:
+    #      - 7000:7000
+      - 8000:8000
+#    command: deno run main.ts
+#    depends_on:
+#      - lerna
+  #      - db
+  #    deploy:
+  #      replicas: 1
